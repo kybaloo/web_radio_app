@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901410395579",
+    "project_id": "webradioapp-4d03b",
+    "storage_bucket": "webradioapp-4d03b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901410395579:android:d55bf0f0bb07ae6daba09e",
+        "android_client_info": {
+          "package_name": "com.example.web_radio_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA878O9zAEw7ieGT4oGg7RuOTVRrTvHXP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
