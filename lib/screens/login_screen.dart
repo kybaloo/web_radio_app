@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton(
                 onPressed: _loginWithEmail,
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
+                  backgroundColor: Colors.purple,
                   padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
                 ),
                 child: Text('Continuer'),

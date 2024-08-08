@@ -75,7 +75,7 @@ class PresentationPage extends StatelessWidget {
                       // Handle register button press
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue,
+                      backgroundColor: Colors.blue,
                       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                     ),
                     child: Text('Register'),
