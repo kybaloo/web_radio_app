@@ -150,7 +150,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ElevatedButton(
                 onPressed: _register,
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
+                  backgroundColor: Colors.purple,
                   padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
                 ),
                 child: Text('Inscrition'),
