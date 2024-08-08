@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:web_radio_app/screens/login_screen.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: PresentationPage(),
-    );
-  }
-}
+import 'register_screen.dart';
 
 class PresentationPage extends StatelessWidget {
   @override
@@ -27,15 +18,15 @@ class PresentationPage extends StatelessWidget {
               Container(
                 width: 200,
                 height: 200,
-                child: Image.network(
-                  'https://path-to-your-image.com/your-image.png',
+                child: Image.asset(
+                  'assets/images/undraw_recording_re_5xyq.png',
                   fit: BoxFit.cover,
                 ),
               ),
               const SizedBox(height: 24),
               // Title
               Text(
-                'Transform Speech into Text Effortlessly',
+                'Vos radios favorites au plus prêt',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 24,
@@ -45,7 +36,7 @@ class PresentationPage extends StatelessWidget {
               SizedBox(height: 16),
               // Description
               Text(
-                'Capture every detail with RecogNotes. Record conversations, lectures, meetings, and more, and watch as they are transcribed into accurate text instantly.',
+                'Trouvez toutes vos chaînes radios et vos chaînes de Podcasts favorites à portée dans notre application Web Radio.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
               ),
@@ -60,7 +51,7 @@ class PresentationPage extends StatelessWidget {
                     height: 8,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: index == 0 ? Colors.blue : Colors.grey,
+                      color: index == 0 ? Colors.purple : Colors.grey,
                     ),
                   );
                 }),
@@ -73,23 +64,31 @@ class PresentationPage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       // Handle register button press
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegisterScreen()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Colors.purple,
                       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                     ),
-                    child: Text('Register'),
+                    child: Text('S\'inscrire'),
                   ),
                   SizedBox(width: 16),
                   OutlinedButton(
                     onPressed: () {
                       // Handle sign in button press
+                      Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
                     },
                     style: OutlinedButton.styleFrom(
                       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                      side: BorderSide(color: Colors.blue),
+                      side: BorderSide(color: Colors.purple),
                     ),
-                    child: Text('Sign in'),
+                    child: Text('Se Connecter', style: TextStyle(color: Colors.purple),),
                   ),
                 ],
               ),

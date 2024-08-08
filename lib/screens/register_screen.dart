@@ -99,7 +99,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 },
                 child: Text(
                   "Vous avez déjà un compte ? Connexion",
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Colors.purple),
                 ),
               ),
               SizedBox(height: 24),

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart';
 import 'package:web_radio_app/screens/register_screen.dart';
-import 'package:web_radio_app/main.dart'; // Make sure to replace 'your_app_name' with the actual name of your app
+import 'package:web_radio_app/main.dart';
+
+import 'onboarding_screen.dart'; // Make sure to replace 'your_app_name' with the actual name of your app
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => RegisterScreen(),
+        builder: (context) => PresentationPage(),
       ),
     );
   }

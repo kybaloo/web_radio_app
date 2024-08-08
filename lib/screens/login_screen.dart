@@ -105,7 +105,7 @@ class _LoginPageState extends State<LoginPage> {
                   alignment: Alignment.centerRight,
                   child: Text(
                     'Mot de Passe oublié ?',
-                    style: TextStyle(color: Colors.blue),
+                    style: TextStyle(color: Colors.purple),
                   ),
                 ),
               ),
@@ -159,7 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 child: Text(
                   " S'inscrire",
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Colors.purple),
                 ),
               ), 
               
@@ -175,7 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 child: Text(
                   'Terms of use and Privacy policy',
-                  style: TextStyle(color: Colors.blue, fontSize: 12),
+                  style: TextStyle(color: Colors.purple, fontSize: 12),
                 ),
               ),
             ],
